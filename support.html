@@ -13,24 +13,53 @@
 <p class="muted">Help for Daily Runbook on iPhone and iPad.</p>
 
 <div class="card">
-<p><strong>Get in touch:</strong> open an issue at <a href="https://github.com/amgarcia2235/runbook-site/issues">github.com/amgarcia2235/runbook-site/issues</a>. Please do not include health details or addresses.</p>
+<p><strong>Get in touch:</strong> most answers are on this page. For anything else, open an issue at <a href="https://github.com/amgarcia2235/runbook-site/issues">github.com/amgarcia2235/runbook-site/issues</a>. We reply within 48 hours.</p>
+<p><strong>Issues are public.</strong> Please do not post a diagnostics report, health details, addresses or the times of your day there. A diagnostics report goes by email, once an address is listed here.</p>
+<!-- SUPPORT_EMAIL: add the support address here when it exists -->
 </div>
 
 <h2>Getting started</h2>
 <ol>
-<li>Open Settings in the app and set your work hours.</li>
-<li>Tap Set to here for Home while you are home, and for Work while you are at work.</li>
-<li>Turn on Trip logging and choose Always Allow for location, so times log with the app closed.</li>
-<li>Turn on Drive detection and allow Motion and Fitness.</li>
-<li>Tap Connect Apple Health, and connect Calendar and Reminders if you want them.</li>
+<li>Pick your kind of work. You can change it later in Profile &gt; What kind of work.</li>
+<li>Open Profile (the person icon, top left). Tap Home, then Work: type the address, or tap Use where I am now while you are there.</li>
+<li>Turn on Trip logging and allow location. It needs Always, with Precise Location on, so times log with the app closed. If iOS only offers While Using, change it in iPhone Settings &gt; Privacy &amp; Security &gt; Location Services &gt; Daily Runbook.</li>
+<li>Turn on Drive detection and allow Motion &amp; Fitness.</li>
+<li>Set your hours in Profile &gt; Hours, holidays and repeating rows.</li>
+<li>Tap Connect Apple Health on Today. Connect Calendar and Connect Reminders are in Profile, if you want them.</li>
 </ol>
-<p>Want to look around first? Settings &gt; Show a sample day fills the app with made-up data.</p>
+<p>On a big site, such as a campus or a plant, open Profile &gt; Work and set Site size to cover every building and the lot.</p>
+<p>Want to look around first? Profile &gt; Show a sample day fills the app with made-up data. Your own log is untouched.</p>
 
 <h2>Common questions</h2>
-<p><strong>A time did not log.</strong> iOS decides when location events are delivered. Check that location access is set to Always for Daily Runbook and that Background App Refresh is on. You can always tap a row in Day plan to mark it done.</p>
-<p><strong>A break or meal is wrong.</strong> Tap Not a break on the Work tab, or pick what a stop was on Today.</p>
-<p><strong>No sleep or steps.</strong> Check Settings &gt; Health &gt; Data Access &amp; Devices &gt; Daily Runbook and turn on the categories.</p>
-<p><strong>Weather.</strong> Weather data is provided by Apple Weather.</p>
+
+<p id="missed"><strong>A time did not log.</strong> Open Plan &gt; Log and tap the day. The section "Why was this missed?" says in plain words what got in the way. The usual causes:</p>
+<ul>
+<li>Location is set to While Using instead of Always. Change it in iPhone Settings &gt; Privacy &amp; Security &gt; Location Services &gt; Daily Runbook.</li>
+<li>Precise Location is off (same page). Geofences need it.</li>
+<li>Low Power Mode was on. iOS holds back background work while it is.</li>
+<li>Background App Refresh is off for Daily Runbook (iPhone Settings &gt; General &gt; Background App Refresh).</li>
+<li>Trip logging is off (Profile, under Places and drives).</li>
+<li>The site is too small for where your phone was (Profile &gt; Work &gt; Site size).</li>
+</ul>
+<p>To fix the day, tap Add a missing event on the same page, or tap a time to change it. iOS decides when location events arrive, so now and then one can still come late or not at all.</p>
+
+<p id="extra"><strong>It logged me leaving, or a break, when I never left.</strong> Indoors, the phone's position can drift a few hundred meters, so a big site can look like you stepped out. Open Profile &gt; Work &gt; Site size, make the circle cover every building and the lot, and tap Save. On the Work tab, tap Not a break on any break that was not one; the app learns that spot and can suggest a bigger site. A wrong time can be swiped away in Plan &gt; Log.</p>
+
+<p id="breaks"><strong>A break or a meal is wrong.</strong> On the Work tab, the Breaks card has Not a break, and a break you logged yourself can be changed or deleted there. On Today, Start break and End break log one by hand while you are on site. A stop at mealtime asks on Today: pick Breakfast, Lunch, Dinner, Snack or Not a meal. For a stop that was not one, like a traffic jam, open Plan &gt; Log, tap the day and swipe it (Not a stop).</p>
+
+<p id="drives"><strong>A drive did not show up.</strong> Turn on Drive detection in Profile and allow Motion &amp; Fitness (iPhone Settings &gt; Privacy &amp; Security &gt; Motion &amp; Fitness). Drives come from the iPhone's motion sensors. The app reads them when it refreshes, so a drive can appear a little after you open the app.</p>
+
+<p id="health"><strong>No sleep, steps or heart numbers.</strong> Tap Connect Apple Health on Today, or in Health settings. Then, in the Health app, tap your picture, then Apps, then Daily Runbook, and turn on what you want to see. Sleep shows when something writes it to Apple Health, such as an Apple Watch worn to bed or your Sleep schedule. Heart rate, sound levels and stand hours come from an Apple Watch. Health records show only after you tap Connect health records on the Health tab.</p>
+
+<p id="weather"><strong>The weather is missing, or says "Weather paused until tomorrow".</strong> The weather follows your Home place (or Work). With no place set, it uses where you are, if location is allowed; set Home if the card asks for a place. "Weather paused until tomorrow" means the app reached its daily weather limit. That is a safety limit, not normal use: the card keeps the last reading and the weather comes back the next day. If you see it more than once, please tell us. Weather data is provided by Apple Weather.</p>
+
+<p id="trucking"><strong>Trucking: can the duty clock be my hours-of-service log?</strong> No. It is a personal duty clock, an awareness tool for your own day, worked out from your drives and your taps. It is not an electronic logging device (ELD) and not a record of duty status; your carrier's log is the record.</p>
+
+<p id="mileage"><strong>Can I give the mileage log to my tax preparer?</strong> Yes, as your own notes. With the Rideshare / gig delivery job, the app keeps a mileage log: the miles of each drive (estimated from the route), each drive marked Business or Personal, valued at the IRS standard rate in force that day. Export it with Export my mileage log (CSV), in Plan &gt; Log or on the Business miles card on the Work tab. It is not tax advice; keep your own records too.</p>
+
+<p id="data"><strong>Where is my data? Does anything leave my phone?</strong> Your log stays on your device, in the app's own storage. There is no account and no server, and the app has no ads and no analytics. Your log is not synced to iCloud. Only weather, drive-time and place lookups go to Apple. Health samples are read from Apple Health and never stored by the app; the optional daily health history stays on the device. To keep a copy, use Profile &gt; Data &gt; Export my log as JSON or CSV. Deleting the app deletes the log. A diagnostics report leaves your phone only if you send it. The <a href="privacy.html">privacy policy</a> has the details.</p>
+
+<p id="diagnostics"><strong>How do I send a diagnostics report?</strong> Profile &gt; Data &gt; Diagnostics shows what the sensors delivered and when. In version 1.4 and later, tap Send diagnostics to send a report by mail or the share sheet. It holds the app version, your permissions and the sensor log, with no health values, no addresses and no place names. It does hold times of day, so please send it by email, not in a public issue.</p>
 </main>
 </body>
 </html>
